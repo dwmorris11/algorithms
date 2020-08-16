@@ -12,8 +12,6 @@ const countUniqueValues = (array) => {
   let count = 0;
   let pointer1 = 0;
   for(let pointer2 = 0; pointer2 < array.length; pointer2++){
-    console.log('p1',array[pointer1]);
-    console.log('p2',array[pointer2]);
     if(array[pointer1] !== array[pointer2] || pointer1 === pointer2){
       count++;
       pointer1 = pointer2;
