@@ -1,3 +1,8 @@
+/* ***************************************
+Time: O(n^2)
+Space: O(1)
+*/
+
 // use the same swap function
 const swap = (arr, i1, i2) => {
   [arr[i2], arr[i1]] = [arr[i1], arr[i2]];

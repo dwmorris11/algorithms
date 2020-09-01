@@ -1,3 +1,8 @@
+/* ***************************************
+Time: O(n^2)
+Space: O(1)
+*/
+
 // naive solution, a swap function is useful
 // no swaps optimizes it for a nearly sorted array
 function bSort(arr){
