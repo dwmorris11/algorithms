@@ -1,3 +1,7 @@
+/* *************************
+Time: O(n log n)
+Space: O(n)
+**************************** */
 // helper function for merging two arrays
 // create an empty array, take a look at the smallest values in each input array
 //While still values to look at
