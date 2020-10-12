@@ -27,6 +27,5 @@ var decode = function(s,i, memo) {
       }
 
       memo[i] = ans;
-      console.log(memo);
       return ans;
   }
