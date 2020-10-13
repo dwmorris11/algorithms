@@ -14,7 +14,7 @@ function bSort(arr){
         noSwaps = false;
       }
     }
-    if(noSwaps) break;
+     if(noSwaps) break;
   }
   return arr;
 }

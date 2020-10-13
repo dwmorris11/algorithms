@@ -12,4 +12,3 @@ class GCD {
     return n;
   }
 }
-
