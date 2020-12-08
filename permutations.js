@@ -16,3 +16,25 @@ function permutationsHelper(array, currentPerm, perm) {
   }
 }
 // O(N!*N)
+
+function getPermutations2(array) {
+  let perm = [];
+  permutationsHelper(0, array, perm);
+  return perm;
+}
+
+function permutationsHelper2(i, array, perm) {
+  if (i === array.length - 1) {
+    perm.push(array.slice());
+  } else {
+    for (let j = i; j < array.length; j++) {
+      swap(array, i, j);
+      permutationsHelper2(i + 1, array, perm);
+      swap(array, i, j);
+    }
+  }
+}
+
+function swap(array, i, j) {
+  [array[i], array[j]] = [array[j], array[i]];
+}
