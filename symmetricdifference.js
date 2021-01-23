@@ -1,7 +1,6 @@
 function sym(...args) {
-  function reducer(acc, cv) {
-    const currentSet = new Set(cv);
-    acc = new Set(acc);
+  function reducer(acc, currentSet) {
+    currentSet = new Set(currentSet);
     for (let elem of currentSet) {
       if (acc.has(elem)) {
         acc.delete(elem);
@@ -11,7 +10,7 @@ function sym(...args) {
     }
     return acc;
   }
-  let result = args.reduce(reducer);
+  let result = args.reduce(reducer, new Set());
   return Array.from(result);
 }
 
